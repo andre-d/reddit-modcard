@@ -1,0 +1,48 @@
+<div class="modcard-content flippable-content">
+    <div class="front face">
+        <div class="topbox">
+            <a href="/u/<%- thing.username %>">/u/<%- thing.username %></a>
+            <a href="#" class="quit">X</a>
+        </div>
+        <div class="info">
+            <span class="leftbox">
+                <img src="/static/snoohead.svg" />
+                regular user<br/>
+                <a href="#">change</a>
+            </span>
+
+            <span class="rightbox">
+                <h2>in your subreddit</h2>
+                <dl>
+                    <dt>link karma</dt>
+                    <dd><%- thing.linkkarma %></dd>
+                    <dt>subreddit karma</dt>
+                    <dd><%- thing.commentkarma %></dd>
+                </dl>
+             </span>
+        </div>
+        <div class="changer">Changer</div>
+        <div class="actions"><a href="#" class="flipper">notes</a></div>
+        
+    </div>
+    <div class="back face">
+        <div class="topbox">
+            <a href="/u/<%- thing.username %>">/u/<%- thing.username %></a>
+            <a href="#" class="quit">X</a>
+        </div>
+        <div class="notes">
+            <ul>
+                <li class="addnew">(+)</li>
+                <li><i>Totally agree, looks like a total spammer</i> by <a href="/u/test">test</a> &mdash; date</a></li>
+                <li><i><a href="#">Looks like a spammer</a></i> by <a href="/u/soam">reddit</a> &mdash; date</a></li>
+            </ul>
+        </div>
+        <div class="actions left">
+            <a href="#">back</a>
+            <a href="#">next</a>
+        </div>
+        <div class="actions">
+            <a href="#" class="flipper">info</a>
+        </div>
+    </div>
+</div>

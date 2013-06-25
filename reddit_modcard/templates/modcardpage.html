@@ -1,0 +1,17 @@
+<%inherit file="reddit.html" />
+<%namespace file="less.html" import="less_stylesheet"/>
+
+<%def name="global_stylesheets()">
+    ${parent.global_stylesheets()}
+    ${less_stylesheet('modcard.less')}
+</%def>
+
+<%def name="javascript_bottom()">
+    ${parent.javascript_bottom()}
+    <% from r2.lib import js %>
+    ${unsafe(js.use('modcard'))}
+</%def>
+
+<%def name="content()">
+    <a href="#" class="modcarder">Clickme</a>
+</%def>

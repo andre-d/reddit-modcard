@@ -1,0 +1,2 @@
+recursive-include reddit_modcard/public *
+recursive-include reddit_modcard/templates *
